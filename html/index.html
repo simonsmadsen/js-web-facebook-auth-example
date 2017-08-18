@@ -1,0 +1,8 @@
+{{#if user_id}}
+  {{user.name}} <br />
+  <img src="/assets/{{user.id}}.jpg"  /> <br />
+  <a href="/logout" >logout</a>
+{{/if}}
+{{#unless user_id}}
+  <button class="fb-login">Login</button>
+{{/unless}}
